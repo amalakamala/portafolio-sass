@@ -4,13 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Themeisle</title>
 	<!-- googel fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 	<!-- Font awesome -->
 	<script src="https://use.fontawesome.com/4154d90246.js"></script>
 	<!-- Materialize ICON -->
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!-- Materialize -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/main.css">	
 </head>
@@ -45,16 +44,16 @@
 			<div class="nav-wrapper">
 				<a href="#" class="brand-logo">Hestia Pro</a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
+				<ul class="right hide-on-med-and-down botones-nav">
 					<li>
-						<a href="#!" class="dropdown-button" data-activates="dropdown-features">
+						<a href="#!" class="dropdown-button" data-beloworigin="true" data-constrainWidth="false" data-activates="dropdown-features">
 							<i class="fa fa-cloud" aria-hidden="true"></i>
 							<span> FEATURES</span>
 							<i class="material-icons right">arrow_drop_down</i>
 						</a>
 					</li>
 					<li>
-						<a href="#!" class="dropdown-button" data-activates="dropdown-sections">
+						<a href="#!" class="dropdown-button" data-beloworigin="true" data-constrainWidth="false" data-activates="dropdown-sections">
 							<span  class="material-icons">flip</span>
 							<span> SECTIONS</span>
 							<i class="material-icons right">arrow_drop_down</i>
@@ -79,7 +78,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="waves-effect waves-light btn">
+						<a class="waves-effect waves-light btn btn-rose">
 							<i class="material-icons left">shopping_cart</i>BUY NOW
 						</a>
 					</li>																					
@@ -129,23 +128,15 @@
 		<!-- CARROUSEL -->
 		<div class="carousel carousel-slider center" data-indicators="true">
 			<div class="carousel-fixed-item center">
-				<a class="btn waves-effect white grey-text darken-text-2">button</a>
+				<a class="btn waves-effect darken-text-2">button</a>
 			</div>
-			<div class="carousel-item red white-text" href="#one!">
-				<h2>First Panel</h2>
-				<p class="white-text">This is your first panel</p>
+			<div class="carousel-item img-1 white-text" href="#one!">
+				<h2 class="text-slider">Simple & Awesome</h2>
+				<p class="white-text">Beautiful, Elegantly Coded</p>
 			</div>
-			<div class="carousel-item amber white-text" href="#two!">
-				<h2>Second Panel</h2>
-				<p class="white-text">This is your second panel</p>
-			</div>
-			<div class="carousel-item green white-text" href="#three!">
-				<h2>Third Panel</h2>
-				<p class="white-text">This is your third panel</p>
-			</div>
-			<div class="carousel-item blue white-text" href="#four!">
-				<h2>Fourth Panel</h2>
-				<p class="white-text">This is your fourth panel</p>
+			<div class="carousel-item img-2 white-text" href="#two!">
+				<h2 class="text-slider">Slick Material Design</h2>
+				<p class="white-text">Beautiful, Elegantly Coded, One-Page WordPress Theme for Business</p>
 			</div>
 		</div>		
 	</header>
@@ -154,26 +145,26 @@
 		<!-- FEATURES SECTION -->
 		<section class="features" id="features-id">
 			<div class="row">
-				<div class="col s12 m12 center">
+				<div class="col s8 offset-s2 m8 offset-m2 center descripcion">
 					<p>Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s12 m4 center">
+				<div class="col s12 m4 center features-info">
 					<div>
 						<i class="fa fa-th" aria-hidden="true"></i>
 					</div>
 					<h4>Responsive</h4>
 					<p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
-				<div class="col s12 m4 center">
+				<div class="col s12 m4 center features-info">
 					<div>
 						<i class="fa fa-th-list" aria-hidden="true"></i>
 					</div>
 					<h4>Quality</h4>
 					<p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
-				<div class="col s12 m4 center">
+				<div class="col s12 m4 center features-info">
 					<div>
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</div>
@@ -183,28 +174,31 @@
 			</div>			
 		</section>
 		<section class="about" id="about-id">
-			<div class="row">
-				<div class="col s12 m6 left">
-					<h2>Who are we now</h2>
-					<p>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances.</p>
-					<p>User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.</p>
-				</div>
-				<div class="col s12 m6 left">
-					<div class="img-about-caja">
-						<img src="assets/img/img_tablet.png" alt="">
+			<div class="about-img">
+				<div class="row">
+					<div class="col s12 m6 left text-about">
+						<h2>Who are we now</h2>
+						<p>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances.</p>
+						<p>User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.</p>
+					</div>
+					<div class="col s12 m6 left img-about">
+						<div class="img-about-caja">
+							<img class="la-img-about" src="assets/img/img_tablet.png" alt="">
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col s12 m6 offset-m3">
-					<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/pYOJNOJfJxU?rel=0&amp;showinfo=0" data-lazy-src="https://www.youtube.com/embed/pYOJNOJfJxU?feature=oembed&autoplay=0&rel=0&controls=1&showinfo=0&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+				<div class="row">
+					<div class="col s12 m6 offset-m3">
+						<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/pYOJNOJfJxU?rel=0&amp;showinfo=0" data-lazy-src="https://www.youtube.com/embed/pYOJNOJfJxU?feature=oembed&autoplay=0&rel=0&controls=1&showinfo=0&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
+				<div class="sombra"></div>
 			</div>
 		</section>
 		<!-- PRODUCT SECTION -->
 		<section class="product">
 			<div class="row">
-				<div class="col s12 m12 center">
+				<div class="col s12 m12 center text-product">
 		 			<h2>Products</h2>
 		 			<h5>Showcase your products in this beautiful shop section.</h5>
 		 		</div>

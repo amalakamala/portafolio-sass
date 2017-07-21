@@ -1,0 +1,25 @@
+/*----- HEADER -----*/
+@mixin headerA(){
+	font-size: $doce;
+	color: black;
+}
+
+@mixin headerI(){
+	margin: 0;
+    width: 15px;
+}
+
+@mixin textSlide(){
+	padding-top: 130px;
+	font-size: 65px;
+	line-height: 77px;
+}
+/*----- SECTION -----*/
+/*----- FEATURES -----*/
+
+@mixin losTitlulos(){
+	color: #3c4858;
+	font-family: $font;	
+	font-size: 36.4px;
+    line-height: 54.6px;
+}

@@ -1,0 +1,95 @@
+.pop-fondo{
+	position:relative;
+	background-color:$blanco;
+	margin: 450px $treinta 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding: $treinta $cero;
+	box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+	
+
+	.features{
+		margin: 50px 0;
+		.descripcion{
+			color: $gris-text;
+			margin-bottom: 15px;
+    		font-size: 17.5px;
+    		font-weight: 200;
+    		line-height: 27.125px;
+		}
+		.features-info{
+			i{
+				font-size: 60px;							
+			}
+			.fa-th{
+				color: $fucsia;
+			}
+			.fa-th-list{
+				color: $turqueza;
+			}
+			.fa-bars{
+				color: $verde;
+			}			
+			h4{
+				font-size: $veinte;
+				color: #3c4858;
+				margin: $treinta $cero $quince;
+				font-family: $font;
+			}
+			p{
+				color: #999;
+				font-size: 16px;
+				margin: $cero $cero $diez;
+				font-weight: $doscientos-w;
+			}
+		}
+	}
+
+	.about{
+		position:relative;
+		.about-img{
+			margin:0;
+			height: 35%;
+			padding: 65px 10px 30px;
+			background-image: url(../img/img_city.jpg);
+			background-attachment: fixed;
+
+			.text-about{
+				color: $blanco;
+				padding-right: 10%;
+				h2{
+					font-family: $font;	
+					font-size: 36.4px;
+				}
+				p{
+					font-size: 17.5px;
+	    			line-height: 25px;
+	    			font-weight: $doscientos-w;
+				}
+			}
+			.img-about{
+				.la-img-about{
+					max-width: 100%; 
+				}
+			}
+		}
+	}
+
+	.product{
+		padding: 50px 0;
+		background-color: #ECECEC;
+		.text-product{
+			h2{
+				@include losTitlulos();
+			}
+			h5{
+				margin-bottom: 15px;
+  				font-size: 17.5px;
+    			line-height: 27.125px;
+    			color:$gris-text;
+    			font-weight: $doscientos-w;
+			}			
+		}
+	}
+
+}

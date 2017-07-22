@@ -6906,7 +6906,7 @@ header {
   margin: 450px 3% 0;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  padding: 30px 0;
+  padding: 30px 0 0;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   /*------ Features ------*/
   /*------ About ------*/
@@ -6916,9 +6916,11 @@ header {
   /*------ Price ------*/
   /*------ Testimonials ------*/
   /*------ Suscribe ------*/
-  /*------ Blog ------*/ }
+  /*------ Blog ------*/
+  /*------ Contact ------*/
+  /*------ FOOTER ------*/ }
   .pop-fondo .features {
-    margin: 50px 0; }
+    padding: 50px 20px; }
     .pop-fondo .features .descripcion {
       color: #999;
       margin-bottom: 15px;
@@ -6965,9 +6967,9 @@ header {
         max-width: 100%; }
       .pop-fondo .about .about-img .el-iframe iframe {
         width: 100%;
-        height: 360px; }
+        height: 290px; }
   .pop-fondo .product {
-    padding: 50px 0;
+    padding: 50px 20px;
     background-color: #ECECEC; }
     .pop-fondo .product .text-product h2 {
       color: #3c4858;
@@ -7026,7 +7028,7 @@ header {
       .pop-fondo .product .tarjetas-product .caja-product .carro-product i {
         color: #999; }
   .pop-fondo .portfolio {
-    padding: 50px 0; }
+    padding: 50px 20px; }
     .pop-fondo .portfolio .text-portfolio h2 {
       color: #3c4858;
       font-family: "Alfa Slab One", cursive;
@@ -7070,56 +7072,58 @@ header {
           font-family: "Alfa Slab One", cursive;
           font-size: 20px;
           line-height: 50px; }
-  .pop-fondo .team .text-team h2 {
-    color: #3c4858;
-    font-family: "Alfa Slab One", cursive;
-    font-size: 36.4px;
-    line-height: 54.6px; }
-  .pop-fondo .team .text-team h5 {
-    margin-bottom: 15px;
-    font-size: 17.5px;
-    line-height: 27.125px;
-    color: #999;
-    font-weight: 200;
-    padding-bottom: 20px; }
-  .pop-fondo .team .ficha-team .img-team {
-    border-radius: 6px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-  .pop-fondo .team .ficha-team .text-ficha {
-    margin-bottom: 50px; }
-    .pop-fondo .team .ficha-team .text-ficha h4 {
+  .pop-fondo .team {
+    padding: 50px 20px; }
+    .pop-fondo .team .text-team h2 {
       color: #3c4858;
       font-family: "Alfa Slab One", cursive;
-      font-size: 18px; }
-    .pop-fondo .team .ficha-team .text-ficha h6 {
-      color: #999;
-      font-size: 15px; }
-    .pop-fondo .team .ficha-team .text-ficha p {
+      font-size: 36.4px;
+      line-height: 54.6px; }
+    .pop-fondo .team .text-team h5 {
       margin-bottom: 15px;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 17.5px;
+      line-height: 27.125px;
       color: #999;
       font-weight: 200;
       padding-bottom: 20px; }
-    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a {
-      padding-left: 30px; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-facebook {
-        color: #2A4588; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-google-plus {
-        color: #D4392B; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-twitter {
-        color: #3F9AEC; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-linkedin {
-        color: #0060A6; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-pinterest {
-        color: #AC131C; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-github-square {
-        color: #262626; }
-      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-dribbble {
-        color: #E43F7E; }
+    .pop-fondo .team .ficha-team .img-team {
+      border-radius: 6px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+    .pop-fondo .team .ficha-team .text-ficha {
+      margin-bottom: 50px; }
+      .pop-fondo .team .ficha-team .text-ficha h4 {
+        color: #3c4858;
+        font-family: "Alfa Slab One", cursive;
+        font-size: 18px; }
+      .pop-fondo .team .ficha-team .text-ficha h6 {
+        color: #999;
+        font-size: 15px; }
+      .pop-fondo .team .ficha-team .text-ficha p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #999;
+        font-weight: 200;
+        padding-bottom: 20px; }
+      .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a {
+        padding-left: 30px; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-facebook {
+          color: #2A4588; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-google-plus {
+          color: #D4392B; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-twitter {
+          color: #3F9AEC; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-linkedin {
+          color: #0060A6; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-pinterest {
+          color: #AC131C; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-github-square {
+          color: #262626; }
+        .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-dribbble {
+          color: #E43F7E; }
   .pop-fondo .price {
     background-color: #ECECEC;
-    padding: 50px 0; }
+    padding: 50px 20px; }
     .pop-fondo .price .text-price h2 {
       color: #3c4858;
       font-family: "Alfa Slab One", cursive;
@@ -7199,7 +7203,7 @@ header {
       .pop-fondo .price .tarjeta-price .caja-precio-dos .btn, .pop-fondo .price .tarjeta-price .caja-precio-dos .btn-large {
         background-color: #e91e63; }
   .pop-fondo .testimonials {
-    padding: 50px 0; }
+    padding: 50px 20px; }
     .pop-fondo .testimonials .text-testimonials h2 {
       color: #3c4858;
       font-family: "Alfa Slab One", cursive;
@@ -7212,29 +7216,31 @@ header {
       color: #999;
       font-weight: 200;
       padding-bottom: 20px; }
-    .pop-fondo .testimonials .text-c-tes .cir {
-      border-radius: 50%;
-      width: 28%;
-      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-    .pop-fondo .testimonials .text-c-tes h4 {
-      color: #3c4858;
-      font-family: "Alfa Slab One", cursive;
-      font-size: 18px; }
-    .pop-fondo .testimonials .text-c-tes h6 {
-      margin-bottom: 15px;
-      font-size: 12px;
-      line-height: 27.125px;
-      color: #999;
-      font-weight: 200;
-      padding-bottom: 20px;
-      font-weight: 200; }
-    .pop-fondo .testimonials .text-c-tes p {
-      margin-bottom: 15px;
-      font-size: 14px;
-      line-height: 20px;
-      color: #999;
-      font-weight: 200;
-      padding-bottom: 20px; }
+    .pop-fondo .testimonials .text-c-tes {
+      margin-bottom: 20px; }
+      .pop-fondo .testimonials .text-c-tes .cir {
+        border-radius: 50%;
+        width: 28%;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+      .pop-fondo .testimonials .text-c-tes h4 {
+        color: #3c4858;
+        font-family: "Alfa Slab One", cursive;
+        font-size: 18px; }
+      .pop-fondo .testimonials .text-c-tes h6 {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 27.125px;
+        color: #999;
+        font-weight: 200;
+        padding-bottom: 20px;
+        font-weight: 200; }
+      .pop-fondo .testimonials .text-c-tes p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #999;
+        font-weight: 200;
+        padding-bottom: 20px; }
   .pop-fondo .suscribe {
     margin: 0;
     height: 35%;
@@ -7273,7 +7279,7 @@ header {
             background-color: #e91e63;
             font-size: 12px; }
   .pop-fondo .blog {
-    padding: 50px 0; }
+    padding: 50px 20px; }
     .pop-fondo .blog .text-blog h2 {
       color: #3c4858;
       font-family: "Alfa Slab One", cursive;
@@ -7289,10 +7295,139 @@ header {
     .pop-fondo .blog .text-c-blog img {
       border-radius: 6px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.12); }
+    .pop-fondo .blog .text-c-blog h6 {
+      margin-bottom: 15px;
+      font-size: 16px;
+      word-wrap: break-word;
+      line-height: 25.2px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+      .pop-fondo .blog .text-c-blog h6 #blog-1 {
+        color: #e91e63; }
+      .pop-fondo .blog .text-c-blog h6 #blog-2 {
+        color: #01ADCA; }
+      .pop-fondo .blog .text-c-blog h6 #blog-3 {
+        color: #EF3129; }
+    .pop-fondo .blog .text-c-blog h4 {
+      color: #3c4858;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 18px; }
+    .pop-fondo .blog .text-c-blog p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+      .pop-fondo .blog .text-c-blog p a {
+        color: #3c4858; }
+  .pop-fondo .contact {
+    padding: 50px 20px;
+    margin: 0;
+    height: 20%;
+    padding: 65px 10px 30px;
+    background-image: url(../img/img_city.jpg); }
+    .pop-fondo .contact .text-contact {
+      margin-bottom: 30px;
+      color: #FFF; }
+      .pop-fondo .contact .text-contact h2 {
+        font-family: "Alfa Slab One", cursive;
+        font-size: 36.4px; }
+      .pop-fondo .contact .text-contact h5 {
+        font-size: 17.5px;
+        line-height: 25px;
+        font-weight: 200; }
+      .pop-fondo .contact .text-contact .icono-contact {
+        font-size: 36.4px; }
+      .pop-fondo .contact .text-contact .text-m-contact h4 {
+        color: #FFF;
+        font-family: "Alfa Slab One", cursive;
+        font-size: 18px; }
+      .pop-fondo .contact .text-contact .text-m-contact p {
+        font-size: 14px;
+        line-height: 13px;
+        font-weight: 200; }
+    .pop-fondo .contact .caja-contact {
+      background-color: #FFF;
+      width: 100%;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+      .pop-fondo .contact .caja-contact .caja-titulo-contact {
+        background-color: #e91e63;
+        color: #FFF;
+        padding: 15px 40px;
+        border-radius: 6px;
+        position: relative;
+        top: -50px;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+        .pop-fondo .contact .caja-contact .caja-titulo-contact h4 {
+          font-family: "Alfa Slab One", cursive;
+          font-size: 20px; }
+      .pop-fondo .contact .caja-contact .contenido .el-btn .btn-contact #btn-c {
+        background-color: #e91e63; }
+  .pop-fondo footer {
+    padding: 50px 20px;
+    color: #FFF;
+    background-color: #26272A; }
+    .pop-fondo footer .text-footer h5 {
+      color: #FFF;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .pop-fondo footer .text-footer p {
+      margin-bottom: 15px;
+      font-size: 17.5px;
+      line-height: 27.125px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px;
+      font-size: 14px; }
+    .pop-fondo footer .redes-footer {
+      font-size: 14px;
+      color: #999;
+      font-weight: 200; }
+      .pop-fondo footer .redes-footer a {
+        color: #999;
+        width: 200px;
+        float: left; }
+      .pop-fondo footer .redes-footer a:hover {
+        color: #7F7F7F; }
+    .pop-fondo footer .instagram-footer img {
+      border-radius: 6px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px; }
+    .pop-fondo footer .footer-final {
+      margin-bottom: 0;
+      color: #FFF; }
+      .pop-fondo footer .footer-final .text-footer-final {
+        margin-top: 20px;
+        margin-bottom: 0; }
+        .pop-fondo footer .footer-final .text-footer-final a {
+          color: #FFF; }
+        .pop-fondo footer .footer-final .text-footer-final a:hover {
+          color: #e91e63; }
+        .pop-fondo footer .footer-final .text-footer-final ul li {
+          display: inline-block;
+          padding-left: 10px; }
+          .pop-fondo footer .footer-final .text-footer-final ul li a {
+            display: inline-block;
+            position: relative;
+            padding: 9px;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase; }
+          .pop-fondo footer .footer-final .text-footer-final ul li a:hover {
+            color: #e91e63; }
 
 @media only screen and (max-width: 992px) {
-  .about .about-img .el-iframe iframe {
-    width: 80%;
-    height: 360px; } }
+  .pop-fondo .about .about-img .el-iframe iframe {
+    width: 100%;
+    height: 160px; }
+  .pop-fondo footer .footer-final .text-footer-final {
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

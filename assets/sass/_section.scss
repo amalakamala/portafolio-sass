@@ -2,7 +2,7 @@
 	@include boxFondo();
 	/*------ Features ------*/
 	.features{
-		margin: 50px 0;
+		padding: 50px 20px;
 		.descripcion{
 			color: $gris-text;
 			margin-bottom: 15px;
@@ -63,14 +63,14 @@
 			.el-iframe{
 				iframe{
 				    width: 100%;
-				    height: 360px;
+				    height: 290px;
 				}
 			}
 		}
 	}
 	/*------ Product ------*/
 	.product{
-		padding: 50px 0;
+		padding: 50px 20px;
 		background-color: #ECECEC;
 		.text-product{
 			h2{
@@ -141,7 +141,7 @@
 	}
 	/*------ Portfolio ------*/
 	.portfolio{
-		padding: 50px 0;
+		padding: 50px 20px;
 		.text-portfolio{
 			h2{
 				@include losTitlulos();
@@ -179,6 +179,7 @@
 	}
 	/*------ Meet ------*/
 	.team{
+		padding: 50px 20px;
 		.text-team{
 			h2{
 				@include losTitlulos();
@@ -237,7 +238,7 @@
 	/*------ Price ------*/
 	.price{
 		background-color: #ECECEC;
-		padding: 50px 0;
+		padding: 50px 20px;
 		.text-price{
 			h2{
 				@include losTitlulos();
@@ -321,7 +322,7 @@
 	}
 	/*------ Testimonials ------*/
 	.testimonials{
-		padding: 50px 0;
+		padding: 50px 20px;		
 		.text-testimonials{
 			h2{
 				@include losTitlulos();
@@ -331,6 +332,7 @@
 			}	
 		}
 		.text-c-tes{
+			margin-bottom: 20px;
 			.cir{
 				border-radius: 50%;
 				width: 28%;
@@ -394,7 +396,7 @@
 	}
 	/*------ Blog ------*/	
 	.blog{
-		padding: 50px 0;		
+		padding: 50px 20px;		
 		.text-blog{
 			h2{
 				@include losTitlulos();
@@ -408,6 +410,154 @@
 				border-radius: 6px;
 				box-shadow: 0 4px 4px 0 rgba(0,0,0,.14), 0 6px 2px -4px rgba(0,0,0,.2), 0 2px 9px 0 rgba(0,0,0,.12);
 			}
+			h6{
+				@include bajadaTitulosPrice();
+				#blog-1{
+					color:$fucsia;
+				}
+				#blog-2{
+					color:$turqueza;
+				}
+				#blog-3{
+					color:$naranjo;
+				}								
+			}
+			h4{
+				@include miniTitlulos();
+			}
+			p{
+				@include bajadaTitulosDos();
+				a{
+					color: #3c4858;
+				}
+			}			
+		}
+	}
+	/*------ Contact ------*/
+	.contact{
+		padding: 50px 20px;
+		@include contactImg();
+		.text-contact{
+			margin-bottom: 30px;
+			color: $blanco;
+			h2{
+				font-family: $font;	
+				font-size: 36.4px;
+			}
+			h5{
+				font-size: 17.5px;
+	    		line-height: 25px;
+	    		font-weight: $doscientos-w;
+			}
+			.icono-contact{
+				font-size: 36.4px;
+			}
+			.text-m-contact{
+				h4{
+					@include miniTitlulosBlancos();
+				}
+				p{
+					font-size: 14px;
+	    			line-height: 13px;
+	    			font-weight: $doscientos-w;
+				}
+			}
+		}
+		.caja-contact{
+			@include cajaPrice();
+			.caja-titulo-contact{
+				background-color: $fucsia;
+				color: $blanco;
+				padding: 15px 40px;
+				border-radius: 6px;
+				position: relative;
+				top: -50px;
+				box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+				h4{
+					font-family: $font;	
+					font-size: 20px;
+				}
+			}
+			.contenido{
+				.el-btn{
+					.btn-contact{
+						#btn-c{
+							background-color: $fucsia;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/*------ FOOTER ------*/
+	footer{
+		padding: 50px 20px;
+		color: $blanco;		
+		background-color: #26272A;
+		.text-footer{
+			h5{
+				@include miniTitlulosBlancos();	
+				margin-bottom: 20px;			
+			}
+			p{
+				@include bajadaTitulos();
+				font-size: 14px;
+			}
+		}
+		.redes-footer{
+			 
+			font-size: 14px;
+			color:$gris-text;
+		   	font-weight: $doscientos-w;	
+		   	a{
+		   		color:$gris-text; 
+		   		width: 200px;
+		   		float: left;
+		   	}
+		   	a:hover{
+				color: #7F7F7F;
+		   	}
+		}
+		.instagram-footer{
+			img{
+				border-radius: 6px;
+				width: 100%;
+   				height: auto;
+   				margin-bottom: 10px;
+			}
+		}
+		.footer-final{
+			margin-bottom:0;
+			color: $blanco;
+			.text-footer-final{
+				margin-top: 20px;
+				margin-bottom:0;
+				a{
+					color: $blanco;
+				}
+				a:hover{
+					color: $fucsia;
+				}
+				ul{
+					li{
+						display: inline-block;
+						padding-left:10px;
+						a{
+						    display: inline-block;
+						    position: relative;
+						    padding: 9px;
+						    font-size: 12px;
+						    font-weight: 500;
+						    text-decoration: none;
+						    text-transform: uppercase;
+						}
+						a:hover{
+							color: $fucsia;
+						}
+					}
+				}	
+			}
 		}
 	}
 }
@@ -417,12 +567,21 @@
 
 
 @media only screen and (max-width: 992px){
-	.about{
-		.about-img{
-			.el-iframe{
-				iframe{
-				    width: 80%;
-				    height: 360px;
+	.pop-fondo{
+		.about{
+			.about-img{
+				.el-iframe{
+					iframe{
+					    width: 100%;
+					    height: 160px;
+					}
+				}
+			}		
+		}
+		footer{
+			.footer-final{
+				.text-footer-final{
+					text-align:center;
 				}
 			}
 		}

@@ -6780,6 +6780,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /*----- HEADER -----*/
 /*----- SECTION -----*/
 /*----- FEATURES -----*/
+/*----- PORTAFOLIO -----*/
+/*----- PRODUCTOS -----*/
+/*----- PRICE -----*/
 * {
   font-family: 'Roboto', sans-serif; }
 
@@ -6800,27 +6803,60 @@ header {
     header #dropdown-sections li a i {
       margin: 0;
       width: 15px; }
-  header nav {
+  header .el-menu {
+    height: 80px;
+    background-color: #FFF;
+    color: #999;
+    position: fixed;
+    top: 0;
+    z-index: 10; }
+    header .el-menu .nav-wrapper .brand-logo {
+      color: #484848;
+      font-size: 18px;
+      padding-left: 50px;
+      font-weight: 200; }
+    header .el-menu .nav-wrapper .botones-nav {
+      padding-right: 50px; }
+      header .el-menu .nav-wrapper .botones-nav li a i {
+        color: #484848; }
+      header .el-menu .nav-wrapper .botones-nav li a span {
+        color: #484848;
+        font-size: 10px; }
+      header .el-menu .nav-wrapper .botones-nav li a .material-icons {
+        color: #484848;
+        font-size: 10px;
+        padding-top: 3px;
+        font-weight: 200; }
+      header .el-menu .nav-wrapper .botones-nav li .btn, header .el-menu .nav-wrapper .botones-nav li .btn-large {
+        background-color: #e91e63; }
+        header .el-menu .nav-wrapper .botones-nav li .btn i, header .el-menu .nav-wrapper .botones-nav li .btn-large i {
+          font-size: 12px;
+          color: #FFF; }
+      header .el-menu .nav-wrapper .botones-nav li a:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
+  header .el-navegador {
     position: fixed;
     top: 0;
     padding-top: 20px;
     background-color: transparent;
     z-index: 10;
     box-shadow: none; }
-    header nav .nav-wrapper .brand-logo {
+    header .el-navegador .nav-wrapper .brand-logo {
       font-size: 18px;
       padding-left: 50px;
       font-weight: 200; }
-    header nav .nav-wrapper .botones-nav li a span {
-      font-size: 10px; }
-    header nav .nav-wrapper .botones-nav li a .material-icons {
-      font-size: 10px;
-      padding-top: 3px;
-      font-weight: 200; }
-    header nav .nav-wrapper .botones-nav li .btn, header nav .nav-wrapper .botones-nav li .btn-large {
-      background-color: #e91e63; }
-    header nav .nav-wrapper .botones-nav li a:hover {
-      background-color: rgba(255, 255, 255, 0.1); }
+    header .el-navegador .nav-wrapper .botones-nav {
+      padding-right: 50px; }
+      header .el-navegador .nav-wrapper .botones-nav li a span {
+        font-size: 10px; }
+      header .el-navegador .nav-wrapper .botones-nav li a .material-icons {
+        font-size: 10px;
+        padding-top: 3px;
+        font-weight: 200; }
+      header .el-navegador .nav-wrapper .botones-nav li .btn, header .el-navegador .nav-wrapper .botones-nav li .btn-large {
+        background-color: #e91e63; }
+      header .el-navegador .nav-wrapper .botones-nav li a:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
   header .carousel {
     height: 500px;
     position: absolute;
@@ -6850,7 +6886,16 @@ header {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   padding: 30px 0;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  /*------ Features ------*/
+  /*------ About ------*/
+  /*------ Product ------*/
+  /*------ Portfolio ------*/
+  /*------ Meet ------*/
+  /*------ Price ------*/
+  /*------ Testimonials ------*/
+  /*------ Suscribe ------*/
+  /*------ Blog ------*/ }
   .pop-fondo .features {
     margin: 50px 0; }
     .pop-fondo .features .descripcion {
@@ -6910,6 +6955,298 @@ header {
       font-size: 17.5px;
       line-height: 27.125px;
       color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+    .pop-fondo .product .tarjetas-product .caja-product {
+      background-color: #FFF;
+      width: 100%;
+      margin-bottom: 30px;
+      border-radius: 6px;
+      color: rgba(0, 0, 0, 0.87);
+      background: #FFF;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .pop-fondo .product .tarjetas-product .caja-product .img-card {
+        position: relative;
+        top: -40px;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        transition: 0.1s; }
+        .pop-fondo .product .tarjetas-product .caja-product .img-card img {
+          border-radius: 10px;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .pop-fondo .product .tarjetas-product .caja-product .img-card:hover {
+        top: -60px; }
+        .pop-fondo .product .tarjetas-product .caja-product .img-card:hover img {
+          box-shadow: 0 10px 15px -8px rgba(0, 0, 0, 0.24), 0 13px 10px -5px rgba(0, 0, 0, 0.2), 0 20px 20px -5px rgba(0, 0, 0, 0.2); }
+      .pop-fondo .product .tarjetas-product .caja-product h6 {
+        margin-top: -30px; }
+        .pop-fondo .product .tarjetas-product .caja-product h6 a {
+          color: #e91e63; }
+      .pop-fondo .product .tarjetas-product .caja-product h4 {
+        font-size: 18.2px;
+        line-height: 28.21px; }
+        .pop-fondo .product .tarjetas-product .caja-product h4 a {
+          color: #3c4858;
+          font-family: "Alfa Slab One", cursive; }
+      .pop-fondo .product .tarjetas-product .caja-product .product-card-description {
+        height: 70px;
+        padding: 0 20px;
+        margin: 0 0 10px;
+        font-size: 14px;
+        font-weight: 200;
+        color: #999; }
+      .pop-fondo .product .tarjetas-product .caja-product .precio-product h4 {
+        font-size: 18.2px;
+        font-weight: 200; }
+      .pop-fondo .product .tarjetas-product .caja-product .carro-product i {
+        color: #999; }
+  .pop-fondo .portfolio {
+    padding: 50px 0; }
+    .pop-fondo .portfolio .text-portfolio h2 {
+      color: #3c4858;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 36.4px;
+      line-height: 54.6px; }
+    .pop-fondo .portfolio .text-portfolio h5 {
+      margin-bottom: 15px;
+      font-size: 17.5px;
+      line-height: 27.125px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+    .pop-fondo .portfolio .img-portfolio-r {
+      position: relative; }
+      .pop-fondo .portfolio .img-portfolio-r img {
+        border-radius: 6px;
+        margin-bottom: 20px; }
+      .pop-fondo .portfolio .img-portfolio-r .mostrar {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-left: 10px;
+        margin-top: 0.5px;
+        border-radius: 6px;
+        width: 95%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        color: #FFF; }
+        .pop-fondo .portfolio .img-portfolio-r .mostrar span {
+          margin-top: 40px;
+          background-color: #e91e63;
+          padding: 5px 20px;
+          border-radius: 20px;
+          position: relative;
+          top: 90px; }
+        .pop-fondo .portfolio .img-portfolio-r .mostrar h4 {
+          position: relative;
+          top: 90px;
+          margin: 2px;
+          font-family: "Alfa Slab One", cursive;
+          font-size: 20px;
+          line-height: 50px; }
+  .pop-fondo .team .text-team h2 {
+    color: #3c4858;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 36.4px;
+    line-height: 54.6px; }
+  .pop-fondo .team .text-team h5 {
+    margin-bottom: 15px;
+    font-size: 17.5px;
+    line-height: 27.125px;
+    color: #999;
+    font-weight: 200;
+    padding-bottom: 20px; }
+  .pop-fondo .team .ficha-team .img-team {
+    border-radius: 6px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+  .pop-fondo .team .ficha-team .text-ficha h4 {
+    color: #3c4858;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 18px; }
+  .pop-fondo .team .ficha-team .text-ficha h6 {
+    color: #999;
+    font-size: 15px; }
+  .pop-fondo .team .ficha-team .text-ficha p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    font-weight: 200;
+    padding-bottom: 20px; }
+  .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a {
+    padding-left: 30px; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-facebook {
+      color: #2A4588; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-google-plus {
+      color: #D4392B; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-twitter {
+      color: #3F9AEC; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-linkedin {
+      color: #0060A6; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-pinterest {
+      color: #AC131C; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-github-square {
+      color: #262626; }
+    .pop-fondo .team .ficha-team .text-ficha .iconos-ficha a .fa-dribbble {
+      color: #E43F7E; }
+  .pop-fondo .price {
+    background-color: #ECECEC;
+    padding: 50px 0; }
+    .pop-fondo .price .text-price h2 {
+      color: #3c4858;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 36.4px;
+      line-height: 54.6px; }
+    .pop-fondo .price .text-price p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      word-wrap: break-word;
+      line-height: 25.2px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+    .pop-fondo .price .tarjeta-price .caja-precio {
+      background-color: #FFF;
+      width: 100%;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+      .pop-fondo .price .tarjeta-price .caja-precio h6 {
+        color: #999;
+        font-size: 15px; }
+      .pop-fondo .price .tarjeta-price .caja-precio h3 {
+        color: #3c4858;
+        margin-top: 30px;
+        font-size: 50px;
+        font-family: "Alfa Slab One", cursive; }
+        .pop-fondo .price .tarjeta-price .caja-precio h3 sub {
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1;
+          color: #777; }
+        .pop-fondo .price .tarjeta-price .caja-precio h3 sup {
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1;
+          color: #777; }
+      .pop-fondo .price .tarjeta-price .caja-precio ul li {
+        padding: 5px 0;
+        color: #999; }
+        .pop-fondo .price .tarjeta-price .caja-precio ul li b {
+          color: black; }
+      .pop-fondo .price .tarjeta-price .caja-precio ul hr {
+        border: 1px solid rgba(153, 153, 153, 0.3); }
+      .pop-fondo .price .tarjeta-price .caja-precio .btn, .pop-fondo .price .tarjeta-price .caja-precio .btn-large {
+        background-color: #e91e63; }
+    .pop-fondo .price .tarjeta-price .caja-precio-dos {
+      background-color: transparent;
+      width: 100%;
+      padding: 30px;
+      border-radius: 6px; }
+      .pop-fondo .price .tarjeta-price .caja-precio-dos h6 {
+        color: #999;
+        font-size: 15px; }
+      .pop-fondo .price .tarjeta-price .caja-precio-dos h3 {
+        color: #3c4858;
+        margin-top: 30px;
+        font-size: 50px;
+        font-family: "Alfa Slab One", cursive; }
+        .pop-fondo .price .tarjeta-price .caja-precio-dos h3 sub {
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1;
+          color: #777; }
+        .pop-fondo .price .tarjeta-price .caja-precio-dos h3 sup {
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1;
+          color: #777; }
+      .pop-fondo .price .tarjeta-price .caja-precio-dos ul li {
+        padding: 5px 0;
+        color: #999; }
+        .pop-fondo .price .tarjeta-price .caja-precio-dos ul li b {
+          color: black; }
+      .pop-fondo .price .tarjeta-price .caja-precio-dos ul hr {
+        border: 1px solid rgba(153, 153, 153, 0.3); }
+      .pop-fondo .price .tarjeta-price .caja-precio-dos .btn, .pop-fondo .price .tarjeta-price .caja-precio-dos .btn-large {
+        background-color: #e91e63; }
+  .pop-fondo .testimonials {
+    padding: 50px 0; }
+    .pop-fondo .testimonials .text-testimonials h2 {
+      color: #3c4858;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 36.4px;
+      line-height: 54.6px; }
+    .pop-fondo .testimonials .text-testimonials h5 {
+      margin-bottom: 15px;
+      font-size: 17.5px;
+      line-height: 27.125px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+    .pop-fondo .testimonials .text-c-tes .cir {
+      border-radius: 50%;
+      width: 28%;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+    .pop-fondo .testimonials .text-c-tes h4 {
+      color: #3c4858;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 18px; }
+    .pop-fondo .testimonials .text-c-tes h6 {
+      margin-bottom: 15px;
+      font-size: 12px;
+      line-height: 27.125px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px;
       font-weight: 200; }
+    .pop-fondo .testimonials .text-c-tes p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+  .pop-fondo .suscribe {
+    margin: 0;
+    height: 35%;
+    padding: 65px 10px 30px;
+    background-size: cover;
+    background-image: url(../img/about.jpg); }
+    .pop-fondo .suscribe .text-suscribe {
+      color: #FFF; }
+      .pop-fondo .suscribe .text-suscribe h2 {
+        font-family: "Alfa Slab One", cursive;
+        font-size: 36.4px; }
+      .pop-fondo .suscribe .text-suscribe h5 {
+        margin-bottom: 15px;
+        font-size: 17.5px;
+        line-height: 27.125px;
+        color: #FFF;
+        font-weight: 200;
+        padding-bottom: 20px; }
+    .pop-fondo .suscribe .caja-suscribe {
+      background-color: #FFF;
+      padding: 5px; }
+  .pop-fondo .blog {
+    padding: 50px 0; }
+    .pop-fondo .blog .text-blog h2 {
+      color: #3c4858;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 36.4px;
+      line-height: 54.6px; }
+    .pop-fondo .blog .text-blog h5 {
+      margin-bottom: 15px;
+      font-size: 17.5px;
+      line-height: 27.125px;
+      color: #999;
+      font-weight: 200;
+      padding-bottom: 20px; }
+    .pop-fondo .blog .text-c-blog img {
+      width: 95%;
+      border-radius: 6px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.12); }
 
 /*# sourceMappingURL=main.css.map */

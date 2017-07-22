@@ -29,7 +29,57 @@ header{
 		}	
 	}
 
-	nav{
+	.el-menu{
+		height: 80px;
+		background-color: #FFF;	
+		color: $gris-text;
+		position: fixed;
+		top: 0;
+		z-index: 10;
+		.nav-wrapper{
+			.brand-logo{
+				color:$gris-nav;
+				font-size: 18px;
+				padding-left: $cincuenta;
+				font-weight:$doscientos-w;
+			}
+			.botones-nav{
+				padding-right: $cincuenta;
+				li{
+
+					a{
+						i{
+							color: $gris-nav;
+						}
+						span{
+							color: $gris-nav;
+							font-size: $diez;
+						}
+						.material-icons{
+							color: $gris-nav;
+							font-size: $diez;
+							padding-top: 3px;
+							font-weight: $doscientos-w;
+						}
+						
+					}
+					.btn{
+	    				background-color: $fucsia;
+	    				i{
+	    					font-size: $doce;
+	    					color:$blanco;
+	    				}
+					}						
+					a:hover{
+						background-color: rgba(255, 255, 255, 0.1);
+					}
+
+				}
+			}
+		}
+	}
+	
+	.el-navegador{
 		position: fixed;
 		top: 0;
 		padding-top: 20px;
@@ -43,6 +93,7 @@ header{
 				font-weight:$doscientos-w;
 			}
 			.botones-nav{
+				padding-right: $cincuenta;
 				li{
 
 					a{

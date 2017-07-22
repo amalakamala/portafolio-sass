@@ -1,13 +1,6 @@
 .pop-fondo{
-	position:relative;
-	background-color:$blanco;
-	margin: 450px $treinta 0;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	padding: $treinta $cero;
-	box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
-	
-
+	@include boxFondo();
+	/*------ Features ------*/
 	.features{
 		margin: 50px 0;
 		.descripcion{
@@ -44,16 +37,11 @@
 			}
 		}
 	}
-
+	/*------ About ------*/
 	.about{
 		position:relative;
 		.about-img{
-			margin:0;
-			height: 35%;
-			padding: 65px 10px 30px;
-			background-image: url(../img/img_city.jpg);
-			background-attachment: fixed;
-
+			@include aboutImg();
 			.text-about{
 				color: $blanco;
 				padding-right: 10%;
@@ -74,7 +62,7 @@
 			}
 		}
 	}
-
+	/*------ Product ------*/
 	.product{
 		padding: 50px 0;
 		background-color: #ECECEC;
@@ -83,13 +71,328 @@
 				@include losTitlulos();
 			}
 			h5{
-				margin-bottom: 15px;
-  				font-size: 17.5px;
-    			line-height: 27.125px;
-    			color:$gris-text;
-    			font-weight: $doscientos-w;
+				@include bajadaTitulos();
 			}			
 		}
-	}
+		.tarjetas-product{
+			.caja-product{
+				@include cajaPro();
+				.img-card{
+					position: relative;
+					top: -40px;
+					padding: 20px;
+				    width: 100%;
+				    height: 100%;
+				    transition:0.1s;				   
+				    img{
+				    	border-radius: 10px;
+					    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+				    }
 
+				}
+				.img-card:hover{
+					top: -60px;
+					
+				    img{
+			   			box-shadow: 0 10px 15px -8px rgba(0,0,0,.24), 0 13px 10px -5px rgba(0,0,0,.2), 0 20px 20px -5px rgba(0,0,0,.2);
+				    }					
+				}
+				h6{
+					margin-top: -30px;
+					a{
+						color: $fucsia;
+					}			
+				}
+				h4{
+				    font-size: 18.2px;
+				    line-height: 28.21px;	
+					a{
+						color: #3c4858;
+						font-family:$font;
+					}			    			
+				}
+				.product-card-description{
+					height: 70px;
+					padding: 0 20px;
+					margin: 0 0 10px;
+					font-size: 14px;
+					font-weight: $doscientos-w;
+					color: $gris-text;
+				}
+				.precio-product{
+					h4{
+						font-size: 18.2px;
+						font-weight: $doscientos-w;
+					}
+				}
+				.carro-product{
+					i{
+						color:$gris-text;
+					}
+				}
+			}
+		}
+	}
+	/*------ Portfolio ------*/
+	.portfolio{
+		padding: 50px 0;
+		.text-portfolio{
+			h2{
+				@include losTitlulos();
+			}
+			h5{
+				@include bajadaTitulos();
+			}			
+		}	
+		.img-portfolio-r{	
+			position: relative;		
+			img{
+				border-radius: 6px;
+				margin-bottom: 20px;
+			}
+			.mostrar{
+				@include hoverPortafolio();
+				span{
+					margin-top: 40px;
+					background-color: $fucsia;
+					padding: 5px 20px;
+					border-radius: 20px;
+					position: relative;
+    				top: 90px;
+				}
+				h4 {
+					position: relative;
+    				top: 90px;
+					margin: 2px;
+					font-family: $font;	
+					font-size: 20px;
+				    line-height: 50px;
+				}
+			}						
+		}	
+	}
+	/*------ Meet ------*/
+	.team{
+		.text-team{
+			h2{
+				@include losTitlulos();
+			}
+			h5{
+				@include bajadaTitulos();
+			}			
+		}
+		.ficha-team{
+			.img-team{
+				border-radius: 6px;
+				box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+			}	
+			.text-ficha{
+				h4{
+					@include miniTitlulos();
+				}
+				h6{
+					color: $gris-text;
+					font-size: 15px;
+				}
+				p{
+					@include bajadaTitulosDos();
+				}
+				.iconos-ficha{
+					a {
+						padding-left: 30px;
+
+						.fa-facebook{
+							color:#2A4588;
+						}
+						.fa-google-plus{
+							color:#D4392B;
+						}	
+						.fa-twitter{
+							color:#3F9AEC;
+						}
+						.fa-linkedin{
+							color: #0060A6;
+						}
+						.fa-pinterest{
+							color:#AC131C;
+						}	
+						.fa-github-square{
+							color:#262626;
+						}
+						.fa-dribbble{
+							color:#E43F7E;
+						}		
+					}
+				}				
+			}
+		}
+	}
+	/*------ Price ------*/
+	.price{
+		background-color: #ECECEC;
+		padding: 50px 0;
+		.text-price{
+			h2{
+				@include losTitlulos();
+			}
+			p{
+				@include bajadaTitulosPrice();
+			}
+		}
+		.tarjeta-price{
+			.caja-precio{
+				@include cajaPrice();
+				h6{
+					color: $gris-text;
+					font-size: 15px;	
+				}
+				h3{
+					color: #3c4858;
+					margin-top: 30px;
+   			 		font-size: 50px;
+   			 		font-family: $font;
+
+					sub{
+						@include losSu();
+					}
+					sup{
+						@include losSu();
+					}		
+				}
+				ul{
+					li{
+						padding: 5px 0;
+						color: $gris-text;
+						b{
+							color: black;
+						}
+					}
+					hr{
+						border: 1px solid rgba(153,153,153,.3);
+					}					
+				}
+				.btn{
+					background-color: $fucsia;
+				}	
+			}
+			.caja-precio-dos{
+				@include cajaPriceDos();
+				h6{
+					color: $gris-text;
+					font-size: 15px;	
+				}
+				h3{
+					color: #3c4858;
+					margin-top: 30px;
+   			 		font-size: 50px;
+   			 		font-family: $font;
+
+					sub{
+						@include losSu();
+					}
+					sup{
+						@include losSu();
+					}		
+				}
+				ul{
+					li{
+						padding: 5px 0;
+						color: $gris-text;
+						b{
+							color: black;
+						}
+					}
+					hr{
+						border: 1px solid rgba(153,153,153,.3);
+					}					
+				}
+				.btn{
+					background-color: $fucsia;
+				}				
+			}
+		}
+	}
+	/*------ Testimonials ------*/
+	.testimonials{
+		padding: 50px 0;
+		.text-testimonials{
+			h2{
+				@include losTitlulos();
+			}
+			h5{
+				@include bajadaTitulos();
+			}	
+		}
+		.text-c-tes{
+			.cir{
+				border-radius: 50%;
+				width: 28%;
+				box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+			}
+			h4{
+				@include miniTitlulos();
+			}
+			h6{
+				@include bajadaClient();
+			}
+			p{
+				@include bajadaTitulosDos();
+			}
+		}
+	}
+	/*------ Suscribe ------*/
+	.suscribe{
+		margin:0;
+		height: 35%;
+		padding: 65px 10px 30px;
+		background-size: cover;
+		background-image: url(../img/about.jpg);
+		.text-suscribe{
+			color: $blanco;
+			h2{
+				font-family: $font;	
+				font-size: 36.4px;
+			}
+			h5{
+				@include losTitlulosBlanco();
+			}
+		}
+		.caja-suscribe{
+			background-color: $blanco;
+			padding: 5px;
+		}
+	}
+	/*------ Blog ------*/	
+	.blog{
+		padding: 50px 0;		
+		.text-blog{
+			h2{
+				@include losTitlulos();
+			}
+			h5{
+				@include bajadaTitulos();
+			}
+		}
+		.text-c-blog{
+			img{
+				width: 95%;
+				border-radius: 6px;
+				box-shadow: 0 4px 4px 0 rgba(0,0,0,.14), 0 6px 2px -4px rgba(0,0,0,.2), 0 2px 9px 0 rgba(0,0,0,.12);
+			}
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

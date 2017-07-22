@@ -10,7 +10,7 @@
 }
 
 @mixin textSlide(){
-	padding-top: 130px;
+	padding-top: 100px;
 	font-size: 65px;
 	line-height: 77px;
 }
@@ -18,7 +18,7 @@
 @mixin boxFondo(){
 	position:relative;
 	background-color:$blanco;
-	margin: 450px $treinta 0;
+	margin: 450px 3% 0;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 	padding: $treinta $cero;
@@ -95,7 +95,7 @@
 @mixin cajaPro(){
 	background-color: $blanco;
 	width: $cien-ciento;
-	margin-bottom: $treinta;
+	margin-bottom: $cincuenta;
 	border-radius: 6px;
 	color: rgba(0,0,0,.87);
 	background: $blanco;

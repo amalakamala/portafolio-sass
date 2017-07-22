@@ -53,11 +53,11 @@ header{
 						}
 						span{
 							color: $gris-nav;
-							font-size: $diez;
+							font-size: $doce;
 						}
 						.material-icons{
 							color: $gris-nav;
-							font-size: $diez;
+							font-size: $doce;
 							padding-top: 3px;
 							font-weight: $doscientos-w;
 						}
@@ -98,10 +98,10 @@ header{
 
 					a{
 						span{
-							font-size: $diez;
+							font-size: $doce;
 						}
 						.material-icons{
-							font-size: $diez;
+							font-size: $doce;
 							padding-top: 3px;
 							font-weight: $doscientos-w;
 						}
@@ -128,15 +128,15 @@ header{
 				color: white;
 			}
 		}
-		.img-1{
-			background-position-y: -250px;	
+		.img-1{	
+			background-size: cover;
 			background-image: url(../img/img_slider_1.jpg);
 			.text-slider{
 				@include textSlide();
 			}
 		}
 		.img-2{
-			background-position-y: -280px;
+			background-size: cover;
 			background-image: url(../img/img_slider_2.jpg);
 			.text-slider{
 				@include textSlide();			
@@ -146,6 +146,47 @@ header{
 }
 
 
+
+
+
+@media only screen and (max-width: 992px){
+	header{	
+		.el-navegador{
+			height: 70px;
+			background-color: rgba(0,0,0,0.8);
+
+			.nav-wrapper{
+				.brand-logo{
+					position: relative;
+    				bottom: 20px;
+					left: 15%;
+					font-size: 18px;
+					padding-left: $cero;
+				}
+				.button-collapse{
+					position: relative;
+    				bottom: 20px;
+				}
+			}
+		}
+		.carousel{
+			.img-1{	
+				.text-slider{
+					padding-top: 100px;
+					font-size: 45px;
+					line-height: 55px;
+				}
+			}
+			.img-2{
+				.text-slider{
+					padding-top: 100px;
+					font-size: 45px;
+					line-height: 55px;			
+				}
+			}
+		}	
+	}		
+}
 
 
 

@@ -158,9 +158,50 @@
 			}
 			.mostrar{
 				@include hoverPortafolio();
+    			.l-1{
+					background-color: $fucsia;
+    			}
+    			.l-2{
+    				background-color: $turqueza;
+  				}
+    			.l-3{
+					background-color: $naranjo;
+    			} 	
+    			.l-6{
+					background-color: $fucsia;
+    			}
+    			.l-7{
+    				background-color: $turqueza;
+  				}
+    			.l-8{
+					background-color: $naranjo;
+    			} 
+				span{					
+					margin-top: 40px;
+					padding: 5px 20px;
+					border-radius: 20px;
+					position: relative;
+    				top: 90px;  				    				
+				}
+				h4 {
+					position: relative;
+    				top: 90px;
+					margin: 2px;
+					font-family: $font;	
+					font-size: 20px;
+				    line-height: 50px;
+				}
+			}
+			.mostrar-big{
+				@include hoverPortafolioBig();	
+    			.l-4{
+    				background-color: $fucsia;
+  				}
+    			.l-5{
+					background-color: $turqueza;
+    			} 							
 				span{
 					margin-top: 40px;
-					background-color: $fucsia;
 					padding: 5px 20px;
 					border-radius: 20px;
 					position: relative;
@@ -489,7 +530,6 @@
 			}
 		}
 	}
-
 	/*------ FOOTER ------*/
 	footer{
 		padding: 50px 20px;
@@ -577,6 +617,32 @@
 					}
 				}
 			}		
+		}
+		.portfolio{
+			.img-portfolio-r{	
+				.mostrar{
+					@include hoverPortafolioM();
+					span{					
+						position: relative;
+	    				top: 70px;  				    				
+					}
+					h4 {
+						position: relative;
+	    				top: 70px;
+					}
+				}
+				.mostrar-big{
+					@include hoverPortafolioBigM();								
+					span{
+						position: relative;
+	    				top: 60px;
+					}
+					h4 {
+						position: relative;
+	    				top: 60px;
+					}
+				}						
+			}	
 		}
 		footer{
 			.footer-final{

@@ -28,7 +28,6 @@ header{
 			}			
 		}	
 	}
-
 	.el-menu{
 		height: 80px;
 		background-color: #FFF;	
@@ -73,7 +72,6 @@ header{
 					a:hover{
 						background-color: rgba(255, 255, 255, 0.1);
 					}
-
 				}
 			}
 		}
@@ -104,8 +102,7 @@ header{
 							font-size: $doce;
 							padding-top: 3px;
 							font-weight: $doscientos-w;
-						}
-						
+						}	
 					}
 					.btn{
 	    				background-color: $fucsia;
@@ -113,7 +110,6 @@ header{
 					a:hover{
 						background-color: rgba(255, 255, 255, 0.1);
 					}
-
 				}
 			}
 		}
@@ -144,10 +140,6 @@ header{
 		}
 	}
 }
-
-
-
-
 
 @media only screen and (max-width: 992px){
 	header{	

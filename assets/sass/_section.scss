@@ -520,6 +520,12 @@
 				}
 			}
 			.contenido{
+				.input-field{
+					input[type=text]:not(.browser-default):focus:not([readonly]){
+					    border-bottom: 1px solid $fucsia;
+   		 				box-shadow: 0 1px 0 0 $fucsia;
+					}						
+				}
 				.el-btn{
 					.btn-contact{
 						#btn-c{
@@ -601,10 +607,6 @@
 		}
 	}
 }
-
-
-
-
 
 @media only screen and (max-width: 992px){
 	.pop-fondo{

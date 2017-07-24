@@ -1,5 +1,10 @@
 $(document).ready(function(){
-	$(".button-collapse").sideNav();
+	$('.button-collapse').sideNav({
+    	menuWidth: 300, // Default is 300
+    	edge: 'left', 
+    	closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    	draggable: true, // Choose whether you can drag to open on touch screens,
+    });
 	/*Dropdown*/
 	$(".dropdown-button").dropdown();
 	/*Carrusel*/
@@ -9,8 +14,6 @@ $(document).ready(function(){
 		setInterval(function() {
 		$('.carousel').carousel('next');
 	}, 3000); 
-
-
 	$("#port-id-img-1").mouseenter(function(){
 		$("#port-1").removeClass('hide');	
 	}).mouseleave(function(){

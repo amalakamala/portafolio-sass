@@ -5,7 +5,7 @@
 .body{
 	background-color: $gris;
 }
-
+/*-------- HEADER --------*/
 header{
 	background-color: transparent;
 	#dropdown-features{
@@ -28,6 +28,7 @@ header{
 			}			
 		}	
 	}
+	/*-------- menu --------*/
 	.el-menu{
 		height: 80px;
 		background-color: #FFF;	
@@ -76,7 +77,7 @@ header{
 			}
 		}
 	}
-	
+	/*-------- nav --------*/	
 	.el-navegador{
 		position: fixed;
 		top: 0;
@@ -84,6 +85,13 @@ header{
 		background-color: transparent;	
 		z-index: 10;
 		box-shadow: none;
+		.side-nav{
+			.material-icons{
+				font-size: 18px;
+				margin-right: 28px;
+				color: $gris-nav;
+			}
+		}
 		.nav-wrapper{
 			.brand-logo{
 				font-size: 18px;

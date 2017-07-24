@@ -151,26 +151,23 @@ header{
 
 @media only screen and (max-width: 992px){
 	header{	
-	.el-menu{
-		height: 70px;
-		background-color: #FFF;	
-		.nav-wrapper{
-			.brand-logo{
-				position: relative;
-    			bottom: 20px;
-				left: 15%;
-				top: 6%;
-				font-size: 18px;
-				padding-left: $cero;				
-			}
-			.button-collapse{
-				color:$gris-nav;			
+		.el-menu{
+			height: 70px;
+			background-color: #FFF;	
+			.nav-wrapper{
+				.brand-logo{
+					position: relative;
+	    			bottom: 20px;
+					left: 15%;
+					top: 6%;
+					font-size: 18px;
+					padding-left: $cero;				
+				}
+				.button-collapse{
+					color:$gris-nav;			
+				}
 			}
 		}
-	}
-
-
-
 		.el-navegador{
 			height: 70px;
 			background-color: rgba(0,0,0,0.8);
